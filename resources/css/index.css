@@ -118,7 +118,6 @@ html {
 
 .container-div { 
   padding-top: 75px; 
-  padding-bottom: 75px; 
 }
 
 .scroll-arrow {
@@ -156,7 +155,8 @@ html {
   color: #272727;
   background-color: white; 
   border-radius: 2px; 
-  height: 100%;
+  height: auto;
+  min-height: 100% !important;
 }
 .card .title {
   line-height: 3rem;
@@ -193,6 +193,10 @@ html {
   color: #fff; 
 }
 .card .image img {
-  border-radius: 2px 2px 0 0; 
-  height: 10%;
+  border-radius: 2px 2px 0 0;
+  background-attachment: fixed;
+}
+
+.pad_card {
+  padding: 5px;
 }
