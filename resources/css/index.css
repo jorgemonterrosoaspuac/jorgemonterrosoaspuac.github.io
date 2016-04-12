@@ -11,7 +11,7 @@ html {
   height: 75px;
   position: fixed; 
   z-index: 100;
-  background-color: rgba(27, 26, 26, 0.4);
+  background-color: rgba(27, 26, 26, 0.9);
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
@@ -246,3 +246,7 @@ html {
 .footer-links li {
   margin-top: .5em;
 }
+
+#radarSkills{
+        background-color: rgba(0,0,0,0.1);
+      }

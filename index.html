@@ -29,27 +29,20 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <title>Jorge Antonio Monterroso Aspuac</title>
 
-    <script class="jquery" src="resources/js/vendor/jquery.js"></script>
-    
+    <script class="jquery" src="resources/js/vendor/jquery.js"></script>    
     <script class="jquery" src="resources/js/vendor/foundation.js"></script>
     <script class="jquery" src="resources/js/vendor/what-input.js"></script>
-    
     <script type="text/javascript" src="resources/js/scripts.js"></script>
     
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+    <script type="text/javascript" src="resources/js/graficas.js"></script>
 
     <script type="text/javascript">
       $(document).foundation();
       var $estud = new Foundation.Equalizer($('#estud'), {});
     </script>
-    <style type="text/css">
-      #radarSkills{
-        background-color: rgba(0,0,0,0.1);
-      }
-    </style>
   </head>
   <body>   
-    
     <div class="menus">
       <div id="menu-center">
         <ul>
@@ -100,7 +93,7 @@
         <div class="small-12 medium-6 large-6 columns pad_card" >
           <div class="card">
             <div class="image">
-              <img src="resources/img/kinal.png">
+              <img src="http://www.youwall.com/wallpapers/201208/green-landscape-wallpaper.jpg">
               <span class="title">Centro Educativo Técnico Laboral KINAL</span>
             </div>
             <div class="content">
@@ -195,40 +188,5 @@
         </div>
       </div>
     </footer>
-
-    <script>
-    var radarChartData = {
-      labels: ["PHP", "HTML", "CSS", "javascript", "C#", "JAVA", "VB"],
-      datasets: [
-        {
-          label: "BASES",
-          fillColor: "rgba(151,187,205,0.2)",
-          strokeColor: "rgba(151,187,205,1)",
-          pointColor: "rgba(151,187,205,1)",
-          pointStrokeColor: "#fff",
-          pointHighlightFill: "#fff",
-          pointHighlightStroke: "rgba(151,187,205,1)",
-          data: [28,70,60,50,35,50,25]
-        },
-        {
-          label: "BASES #2",
-          fillColor: "rgba(51,187,205,0.2)",
-          strokeColor: "rgba(51,187,205,1)",
-          pointColor: "rgba(51,187,205,1)",
-          pointStrokeColor: "grey",
-          pointHighlightFill: "grey",
-          pointHighlightStroke: "rgba(51,187,205,1)",
-          data: [38,50,80,10,65,59,42]
-        }
-      ]
-    };
-
-    window.onload = function(){
-      window.myRadar = new Chart(document.getElementById("radarSkills").getContext("2d")).Radar(radarChartData, {
-        responsive: true, angleLineColor : "white", angleLineWidth: .3, scaleLineColor: "white", scaleLineWidth: .3, pointLabelFontStyleSize: 13, pointLabelFontStyle: "italic", pointLabelFontColor: "rgba(255,255,255,0.6)"
-      });
-    }
-
-    </script>
   </body>
 </html>
