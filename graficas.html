@@ -1,0 +1,65 @@
+<!Doctype>
+<html>
+<head>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+</head>
+<body>
+	<div style="width:30%">
+		<canvas id="canvas" height="450" width="450"></canvas>
+	</div>
+	<script>
+    var radarChartData = {
+      labels: ["PHP", "HTML", "CSS", "javascript", "C#", "JAVA", "VB"],
+      datasets: [
+        {
+          label: "BASES",
+          fillColor: "rgba(151,187,205,1)",
+          strokeColor: "rgba(151,187,205,1)",
+          pointColor: "rgba(151,187,205,1)",
+          pointStrokeColor: "#fff",
+          pointHighlightFill: "#fff",
+          pointHighlightStroke: "rgba(151,187,205,1)",
+          data: [28,70,60,50,35,50,25]
+        },
+        {
+          label: "ASD",
+          fillColor: "rgba(151,124,205,1)",
+          strokeColor: "rgba(151,187,205,1)",
+          pointColor: "rgba(151,187,205,1)",
+          pointStrokeColor: "#fff",
+          pointHighlightFill: "#fff",
+          pointHighlightStroke: "rgba(151,187,205,1)",
+          data: [100,10,122,40,30,11,95]
+        },
+        {
+          label: "ASDF",
+          fillColor: "rgba(151,187,125,0.2)",
+          strokeColor: "rgba(151,187,205,1)",
+          pointColor: "rgba(151,187,205,1)",
+          pointStrokeColor: "#fff",
+          pointHighlightFill: "#fff",
+          pointHighlightStroke: "rgba(151,187,205,1)",
+          data: [28,70,60,50,35,50,25]
+        },
+        {
+          label: "ASDFG",
+          fillColor: "rgba(151,187,123,0.2)",
+          strokeColor: "rgba(151,187,205,1)",
+          pointColor: "rgba(151,187,205,1)",
+          pointStrokeColor: "#fff",
+          pointHighlightFill: "#fff",
+          pointHighlightStroke: "rgba(151,187,205,1)",
+          data: [28,70,60,50,35,50,25]
+        }
+      ]
+    };
+
+    window.onload = function(){
+      window.myRadar = new Chart(document.getElementById("canvas").getContext("2d")).Radar(radarChartData, {
+        responsive: true
+      });
+    }
+
+    </script>
+</body>
+</html>

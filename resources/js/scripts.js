@@ -14,6 +14,12 @@ $(document).ready(function() {
 //  });
   //smoothscroll
   
+  $('#toTop').click().animate({
+      'scrollTop': $window.offset().top
+    }, 10000, 'swing', function() {
+      $(document).on("scroll", onScroll);
+    });
+  
   $('a[href^="#"]').on('click', function(e) {
     e.preventDefault();
     $(document).off("scroll");
